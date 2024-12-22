@@ -1,0 +1,12 @@
+[package]
+name = "mandelbrot-wasm-realtime"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Do liczenia zbioru:
+# (Jeśli chcesz mieć bardzo głębokie zoomy, możesz użyć bigfloat. Tu zostajemy przy f64.)
+wasm-bindgen = "0.2"
+
+[lib]
+crate-type = ["cdylib"]
